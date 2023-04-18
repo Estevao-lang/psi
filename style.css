@@ -11,15 +11,114 @@ body {
   background: rgb(253, 187, 45);
   background: linear-gradient(180deg, rgba(253, 187, 45, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
+/* Important styles */
+#toggle {
+  display: block;
+  width: 28px;
+  height: 30px;
+  margin: 30px auto 10px;
+}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#toggle.on + #menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* menu appearance*/
+#menu {
+  position: relative;
+  color: #999;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  /* just for this demo */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s;
+}
+#menu:after {
+  position: absolute;
+  top: -15px;
+  left: 95px;
+  content: "";
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+ul, li, li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+}
+li a:hover,
+li a:focus {
+  background: #1ABC9C;
+  color: #fff;
+}
+
+
+/* demo styles */
 
 nav {
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(248, 248, 248);
   height: 15vh;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 nav a {
+  max-height: 100%;
   max-width: 100%;
   color: #8B4513;
   text-decoration: none;
@@ -118,20 +217,32 @@ nav a:hover {
   }
 }
 
+.apresentacao{
+  max-width: 100%;
+  max-height: 100%;
+
+  
+}
 .profile_text {
+  margin-top: 10vh;
   background-color: whitesmoke;
-  max-width: 50%;
+  max-height: 100%;
+  max-width: 100%;
   margin-left: 40vw;
   position: relative;
   bottom: 30vh;
 }
+.profile{
+max-width: 100%;
+}
+.card_photo{
+  position: relative;
+margin-left: 1vw;
 
-.profile {
-  max-width: 100%;
-  height: auto;
 }
 .card_photo .profile{
-
+max-width: 100%;
+max-height: 100%;
 
   background: linear-gradient(brown, orange) padding-box,
   linear-gradient(to right,brown, orange) border-box;
