@@ -187,49 +187,47 @@ body {
     transform: translate(85px, 0%);
   }
 }
-.apresentacao{
+
+.apresentacao {
+  display: flex;
   height: 50vh;
+  width: 100%;
   background-color: white;
 }
-.profile-card{
 
-  height:50vh;
- 
-}
-.profile-img{
-  width: 35vw;
-  height: 50vh;
-  margin-left: 10%;
-
-
-
+.profile-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
-.profile-img , .p-text{
-  padding-left: 10vw;
+.profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.p-text{
- margin-left: 65%;
-width: 50vw;
-  margin-top: -35vh;
-height: 10vh;
-
-}
 
 .profile-card .profile{
   max-width: 100%;
   max-height: 100%;
   
-    background: linear-gradient(brown, orange) padding-box,
-    linear-gradient(to right,brown, orange) border-box;
+  background: linear-gradient(brown, orange) padding-box,
+  linear-gradient(to right,brown, orange) border-box;
   border-radius: 100%;
   border: 4px solid transparent;-webkit-box-shadow: 13px 10px 55px -7px rgba(0,0,0,0.75);
   -moz-box-shadow: 13px 10px 55px -7px rgba(0,0,0,0.75);
   box-shadow: 13px 10px 55px -7px rgba(0,0,0,0.75);
   
   }
- .profile{
+
+.profile-card p {
+  display: flex;
+  align-items: center;
+}
+
+.profile{
   
 max-width: 100%;
 max-height: 100%;
@@ -243,6 +241,7 @@ background-repeat: no-repeat;
 height: 45%;
 
 }
+
 .container-text p{
 
 
