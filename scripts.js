@@ -65,6 +65,8 @@ function toggleClass(elem, className) {
     }
 }
 
+
+
 theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
