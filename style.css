@@ -361,8 +361,8 @@ section {
 }
 
 .main_footer {
-    background-color: #00b0d9;
-    color: #fff;
+    background: linear-gradient(180deg, rgba(253, 187, 45, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    color: rgba(139, 69, 19);
     font-size: 0.875em;
 }
 
@@ -411,22 +411,21 @@ section {
 .colfooter .titleFooter {
     font-family: 'open_sansregular';
     font-size: 1.3em;
-    color: #ffffff;
+    color: rgba(139, 69, 19);
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
-    border-bottom: 1px #4ec0db solid;
 }
 
 .colfooter p {
     font-family: 'open_sanslight';
-    color: #ffffff;
+    color: rgba(139, 69, 19);
     font-size: 1em;
     height: 25px;
 }
 
 .botao {
     padding: 10px 12px;
-    color: #fff;
+    color: rgba(139, 69, 19);
     font-family: 'open_sansregular';
     letter-spacing: 2px;
     text-align: center;
@@ -443,7 +442,7 @@ section {
     left: 0px;
     width: 100%;
     height: 1px;
-    background: #6098FF;
+    background: linear-gradient(180deg, rgba(253, 187, 45, 1) 0%, rgba(255, 255, 255, 1) 100%);
     display: block;
     -webkit-transform-origin: left top;
     -ms-transform-origin: left top;
@@ -466,7 +465,7 @@ section {
 
 .botao {
     font-size: 1em;
-    color: #ffffff;
+    color: rgba(139, 69, 19);
     text-align: center;
     font-family: 'open_sansregular';
     border: 1px solid #ffffff;
@@ -482,7 +481,7 @@ section {
 
 .botao:hover {
     border: 1px solid #262626;
-    color: #2adee3!important;
+    color: rgba(139, 69, 19);
 }
 
 .botao::before {
@@ -540,7 +539,7 @@ section {
 }
 
 .main_footer_copy {
-    background-color: #01a2c8;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(253, 187, 45, 1) 100%);
     width: 100%;
     float: left;
     text-align: center;
@@ -563,7 +562,7 @@ section {
 }
 
 .main_footer_copy .by a {
-    color: #fff;
+    color: rgba(139, 69, 19);
     text-decoration: none;
 }
 
