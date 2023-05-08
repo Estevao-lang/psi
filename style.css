@@ -40,6 +40,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
     color: rgba(139, 69, 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
 }
 
 
@@ -234,9 +239,22 @@ h1 {
     font-size: 35px;
 }
 
+.psi_grupal,
+.plantao_psi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1,
 .serv {
-    margin-left: 30%;
+    text-align: center;
 }
 
 .serv {
@@ -256,12 +274,35 @@ h1,
     padding: 20px;
 }
 
+.container-text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;    
+}
+
 .apresentacao {
     background-color: white;
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-items: center;
+    justify-content: space-around;
     width: 100%;
+    height: 60vh;
+    padding: 3.5rem;
+    text-align: center;
+}
+
+.apresentacao span {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.apresentacao span p {
+    font-size: 1.3rem;
 }
 
 .profile {
@@ -276,6 +317,12 @@ h1,
 }
 
 section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -299,13 +346,19 @@ section {
     height: 70vh;
 }
 
+.palestra {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
 .div2,
 .div1 {
-    margin-top: 3vh;
     background-color: whitesmoke;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     height: 100%;
-    margin-left: 15vw;
-    margin-right: 15vw;
     max-width: 65%;
     border-radius: 1%;
     -webkit-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
@@ -313,11 +366,21 @@ section {
     box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
 }
 
+.parent {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
 .psicoterapia {
     background-color: whitesmoke;
-    height: 100%;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
     max-width: 65%;
     border-radius: 1%;
     -webkit-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
@@ -326,7 +389,6 @@ section {
 }
 
 .container_btn {
-    margin-top: 10%;
     font-size: large;
     height: 10vh;
     width: 100%;
@@ -341,7 +403,6 @@ section {
 }
 
 .btn_agendar {
-    margin-top: 10%;
     font-size: large;
     height: 10vh;
     width: 100%;
