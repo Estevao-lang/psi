@@ -271,6 +271,9 @@ align-items: center;
     align-items: center;
     justify-content: center;
   }
+  .apre_text{
+    padding: 30px;
+  }
   
   .profile {
     display: flex;
