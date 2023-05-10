@@ -85,8 +85,8 @@ body {
 }
 
 .logo {
-    max-height: 10vh;
-    max-width: 10vw;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .nav>#nav-check {
@@ -231,16 +231,18 @@ h1 {
     background: linear-gradient(180deg, rgb(255, 174, 0) 0%, rgb(46, 26, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 h1,
 .serv {
-    margin-left: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .serv {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .profile,
@@ -263,8 +265,17 @@ h1,
     justify-items: center;
     width: 100%;
 }
-
-.profile {
+.profile1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 100%;
     max-height: 100%;
     background: linear-gradient(brown, orange) padding-box, linear-gradient(to right, brown, orange) border-box;
@@ -273,8 +284,9 @@ h1,
     -webkit-box-shadow: 13px 10px 55px -7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 13px 10px 55px -7px rgba(0, 0, 0, 0.75);
     box-shadow: 13px 10px 55px -7px rgba(0, 0, 0, 0.75);
-}
-
+    margin: 0 auto;
+  }
+  
 section {
     width: 100%;
 }
@@ -326,8 +338,10 @@ section {
 }
 
 .container_btn {
+
     margin-top: 10%;
-    font-size: large;
+    font-size: 40px;
+    font-weight: 600;
     height: 10vh;
     width: 100%;
     border-radius: 10px;
@@ -341,8 +355,9 @@ section {
 }
 
 .btn_agendar {
+    font-weight: 600;
     margin-top: 10%;
-    font-size: large;
+    font-size: 40px;
     height: 10vh;
     width: 100%;
     border-radius: 10px;
@@ -396,7 +411,7 @@ section {
 
 .colfooter ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color:rgba(139, 69, 19);
     font-size: 1em;
 }
 
@@ -489,7 +504,7 @@ section {
     width: 0%;
     height: 100%;
     display: block;
-    background: #262626;
+    background: orange;
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg);
@@ -510,7 +525,8 @@ section {
     width: 0%;
     height: 100%;
     display: block;
-    background: #2adee3;
+ 
+    background:rgba(139, 69, 19);
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg);
@@ -549,7 +565,8 @@ section {
 .main_footer_copy p {
     font-family: 'open_sanslight';
     font-size: 1em;
-    color: #e1e0e0;
+    color: rgba(139, 69, 19);
+
     height: 20px;
 }
 
@@ -573,7 +590,8 @@ section {
 .main_footer_copy .by i {
     font-size: 0.96em;
     margin-right: 3px;
-    color: #e82626;
+    color: rgba(139, 69, 19);
+
 }
 
 
