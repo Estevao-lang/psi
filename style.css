@@ -311,7 +311,7 @@ section {
     padding: 20px;
     margin: 10px;
     border: 1px solid #fff;
-    height: 70vh;
+    max-height: 100%;
 }
 
 .div2,
@@ -339,11 +339,17 @@ section {
     -moz-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
     box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
 }
+.container_btn a,
+.btn_agendar a{
+    text-decoration: none;
+    color: rgba(139, 69, 19);
 
+}
 .container_btn {
+ 
 
     margin-top: 10%;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 600;
     height: 10vh;
     width: 100%;
@@ -358,9 +364,10 @@ section {
 }
 
 .btn_agendar {
+
     font-weight: 600;
     margin-top: 10%;
-    font-size: 40px;
+    font-size: 20px;
     height: 10vh;
     width: 100%;
     border-radius: 10px;
