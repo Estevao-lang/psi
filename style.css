@@ -236,9 +236,9 @@ h1 {
 
 h1,
 .serv {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .serv {
@@ -265,17 +265,19 @@ align-items: center;
     justify-items: center;
     width: 100%;
 }
+
 .profile1 {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .apre_text{
+}
+
+.apre_text {
     padding: 30px;
-  }
-  
-  .profile {
+}
+
+.profile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,8 +290,8 @@ align-items: center;
     -moz-box-shadow: 13px 10px 55px -7px rgba(0, 0, 0, 0.75);
     box-shadow: 13px 10px 55px -7px rgba(0, 0, 0, 0.75);
     margin: 0 auto;
-  }
-  
+}
+
 section {
     width: 100%;
 }
@@ -339,15 +341,14 @@ section {
     -moz-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
     box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
 }
+
 .container_btn a,
-.btn_agendar a{
+.btn_agendar a {
     text-decoration: none;
     color: rgba(139, 69, 19);
-
 }
-.container_btn {
- 
 
+.container_btn {
     margin-top: 10%;
     font-size: 20px;
     font-weight: 600;
@@ -364,7 +365,6 @@ section {
 }
 
 .btn_agendar {
-
     font-weight: 600;
     margin-top: 10%;
     font-size: 20px;
@@ -421,7 +421,7 @@ section {
 
 .colfooter ul li a {
     text-decoration: none;
-    color:rgba(139, 69, 19);
+    color: rgba(139, 69, 19);
     font-size: 1em;
 }
 
@@ -535,8 +535,7 @@ section {
     width: 0%;
     height: 100%;
     display: block;
- 
-    background:rgba(139, 69, 19);
+    background: rgba(139, 69, 19);
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg);
@@ -576,7 +575,6 @@ section {
     font-family: 'open_sanslight';
     font-size: 1em;
     color: rgba(139, 69, 19);
-
     height: 20px;
 }
 
@@ -601,7 +599,6 @@ section {
     font-size: 0.96em;
     margin-right: 3px;
     color: rgba(139, 69, 19);
-
 }
 
 
@@ -619,5 +616,120 @@ section {
     .colfooter:nth-of-type(3n+0) {
         margin-right: 0;
         border-right: 0;
+    }
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
     }
 }
