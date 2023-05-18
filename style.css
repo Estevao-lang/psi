@@ -626,6 +626,21 @@ section {
     max-width: 1000px;
     position: relative;
     margin: auto;
+
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 100%;
+
+}
+.slideshow-container1 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+background-color: #ff9500;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 100%;
+
 }
 
 
@@ -733,3 +748,5 @@ section {
         font-size: 11px
     }
 }
+
+
