@@ -323,6 +323,19 @@ p  {
         border: 1px solid #fff;
         max-height: 100%;
     }
+    .redes1{
+        text-align: center;
+        background-color: whitesmoke;
+        border-radius: 1%;
+        -webkit-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
+        box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #fff;
+        max-height: 100%;
+    }
+    
 .apresentacao {
     background-color: white;
     display: flex;
