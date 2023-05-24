@@ -275,6 +275,10 @@ font-weight: 900;
     }
 }
 
+.mySlides {
+    text-align: center;
+}
+
 h1 {
     background: linear-gradient(180deg, rgb(255, 174, 0) 0%,brown);
     -webkit-background-clip: text;
@@ -296,16 +300,29 @@ h1,
 .profile,
 .psi_img,
 .container-img,
-.psi_text {
+.psi_text,
+.container-text,
+p  {
     max-width: 100%;
     max-height: 100%;
+    text-align: center;
 }
 
 .psi_text,
 .container-text {
     padding: 20px;
 }
-
+    .redes{
+        background-color: whitesmoke;
+        border-radius: 1%;
+        -webkit-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
+        box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #fff;
+        max-height: 100%;
+    }
 .apresentacao {
     background-color: white;
     display: flex;
@@ -324,7 +341,9 @@ h1,
 .apre_text {
     padding: 30px;
 }
-
+span {
+  border: 1px orangered;
+}
 .profile {
     display: flex;
     align-items: center;
