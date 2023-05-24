@@ -47,7 +47,7 @@ section {
   }
   
   .grid-container--fit {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     width: 100%;
     background:whitesmoke;
     display: flex;
@@ -57,26 +57,25 @@ section {
   .borda{
     background: linear-gradient(brown, orange) padding-box, linear-gradient(to right, brown, orange) border-box;
     border-radius: 200px;
-max-width: 180px;
-max-height:180px ;
+max-width: 160px;
+max-height:160px ;
 margin-bottom: 100px;
-position: relative;
-left: 5em;
+margin: 10px;
   }
 
 
 .grid-element1 {
   border-radius: 100%;
-font-size: 16.8px;
+font-size: small;
   box-shadow: 13px 10px 55px -7px rgba(0, 0, 0, 0.75);
   padding: 20px;
   color: rgba(139, 69, 19);
 background-color: whitesmoke;
   border-radius: 100%;
-font-weight: 900;
+padding: 50px;
   margin: 10px;
-  height: 180px;
-  width: 180px;
+  height: 140px;
+  width: 140px;
   align-content: center;
   display: flex;
   justify-content: center;
@@ -284,6 +283,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
+    padding: 10px;
 }
 
 h1,
@@ -382,18 +382,25 @@ section {
 
 .grid-container--fill {
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    width: 100%;
+    text-align: center;
+
+
 }
 
 .grid-element {
+
     background-color: whitesmoke;
     border-radius: 1%;
     -webkit-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
     box-shadow: 10px 10px 44px 0px rgba(0, 0, 0, 0.57);
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     border: 1px solid #fff;
-    max-height: 100%;
+    max-width: 100%;
+
+    
 }
 
 .div2,
