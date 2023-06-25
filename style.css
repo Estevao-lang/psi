@@ -104,7 +104,7 @@ border-radius: 100%;
 .grid-element1 p:hover {
     background-color: #ff9500;
 border-radius: 100%;
-  
+  color: #ffffff;
     transform: translate(5px, 5px);
 }
 
