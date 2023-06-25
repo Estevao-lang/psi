@@ -58,12 +58,15 @@ section {
     align-items: center;
     /* Centraliza verticalmente os elementos */
 }
-.grid-element1{
-
+.grid-element1 p{
+border-radius: 100%;
 }
 
 .grid-element1 p{
 
+    
+    border: 5px solid;
+    border: orange 5px solid;
     position: relative;
     font-size: 13px;
     box-shadow: 13px 10px 55px -7px rgba(0, 0, 0, 0.75);
@@ -78,9 +81,9 @@ section {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    border-radius: 50%;
+   
     font-weight: 600;
-    overflow: hidden;
+
 
 }
 
@@ -93,12 +96,15 @@ section {
     bottom: -5px;
     z-index: -1;
     background: linear-gradient(to right, brown, orange);
-    border-radius: inherit;
+border-radius: 100%;
+
+    
 }
 
 .grid-element1 p:hover {
     background-color: #ff9500;
-    color: white;
+border-radius: 100%;
+  
     transform: translate(10px, 10px);
 }
 
