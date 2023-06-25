@@ -1,18 +1,22 @@
 <?php
-
-$host = "localhost";
-$user = "root";
-$pass = "";
-$dbname = "gevel";
-$port = 3306;
-
-
+$host = 'localhost';
+$port = 5432;
+$dbname = 'karina';
+$user = 'postgres';
+$password = 'L0b0tr1pl0@';
 
 try {
-    $conn = new PDO("mysql:host=$host;port=$port;dbname=" . $dbname, $user, $pass);
-    //echo "Conexão com banco de dados realizado com sucesso!<br>";
-} catch (Exception $ex) {
-    //echo "Erro: Conexão com banco de dados não realizada com sucesso.<br>";
-    die("Erro: Por favor tente novamente. Caso o problema persista, entre em contato o administrador: <br>");
+    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
+    $pdo = new PDO($dsn, $user, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    // Executar consultas ou operações no banco de dados aqui
+    
+    // Fechar a conexão
+    $pdo = null;
+} catch (PDOException $e) {
+    echo "Erro na conexão: " . $e->getMessage();
 }
 
+
+?>

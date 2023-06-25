@@ -70,7 +70,7 @@ border-radius: 100%;
     position: relative;
     font-size: 13px;
     box-shadow: 13px 10px 55px -7px rgba(0, 0, 0, 0.75);
-    padding: 80px;
+    padding: 75px;
     background-color: whitesmoke;
 
     margin: 10px;
@@ -105,7 +105,7 @@ border-radius: 100%;
     background-color: #ff9500;
 border-radius: 100%;
   
-    transform: translate(10px, 10px);
+    transform: translate(5px, 5px);
 }
 
 
@@ -113,7 +113,9 @@ border-radius: 100%;
     height: 70px;
     width: 100%;
     background-color: whitesmoke;
-    position: relative;
+    position: fixed;
+    z-index: 1;
+    margin-bottom:205px ;
 }
 
 .nav>.nav-header {
@@ -972,6 +974,11 @@ align-items: center;
 .fale p:focus {
     outline: none;
 }
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 @media only screen and (max-width:480px){
     .fale{
         margin: 0 auto; /* Add this line */
@@ -981,13 +988,7 @@ align-items: center;
         align-items: center;  
     }
 }
-    footer{
-        margin: 0 auto; /* Add this line */
-        display: flex;
-        flex-direction: column; /* Add this line */
-        justify-content: center;
-        align-items: center;  
-    }
+
 
 .fale{
     margin: 0 auto; /* Add this line */
@@ -996,3 +997,39 @@ align-items: center;
     justify-content: center;
     align-items: center; 
 }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background: linear-gradient(brown, orange) padding-box, linear-gradient(to right, brown, orange) border-box;
+  }
+  
+  form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+position: relative;
+top: 3vh;
+
+  }
+  
